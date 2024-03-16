@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Radio buttons</title>
+<link rel="stylesheet" href="feedback1.css">
+</head>
+<P align="left">
+	<a href="Index.html"><img src=" back button.jpg" height="30"
+		width="80"></a>
+</P>
+
+<body align="center" bgcolor="white" text="white">
+	<div class="bgimage">
+		<div class="menu">
+			<div class="leftmenu">
+				<img src="logo.jpg" width="100" height="80" align="left">
+			</div>
+			<div class="rightmenu">
+				<nav>
+					<ul>
+						<li id=firstlist><a href="home.html">Home</a></li>
+						<li><a href="product.html">products</a></li>
+						<li><a href="aboutus.html">aboutus</a></li>
+						<li><a href="contactus.html">contactus</a></li>
+						<li><a href="sign in.html">signin</a></li>
+						<li><a href="feedback1.html">Feedback</a></li>
+						<li><a href="findus.html">Findus</a></li>
+				</nav>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+</body>
+<div class="mark">
+	<h4 style="background: white;color:red">
+		<marquee>Shree Datta Fertilisers & Chemicals
+	</h4>
+	</marquee>
+</div>
+</html>
+<html>
+<body background="NN.jpg" text="#008B8B">
+	<form action="/savefeedback" method="post" th:action="@{/savefeedback}"
+			th:object="${Feedback}">
+	<div class="feed">
+		<h1
+			style="font-size: 30pt; font-family: Georgia; color: black; font-weight: bold">
+			<U>Feedback</U>
+		</h1>
+		<br>
+		<br>
+		<h3>Please provide your feedback below:</h3>
+		<br> Name: <input type="text" name="name" size="20" th:field="*{name}"><br>
+		<br> E-mail: <input type="text" name="email" size="20" th:field="*{email}"><br>
+		<br> Phone no.: <input type="text" name="phoneno" size="20" th:field="*{phoneno}"><br>
+		<br>
+		<p>How do you rate your overall experience?</p>
+		<br> <input type="radio" name="experience" value="Bad" th:field="*{experience}">Bad
+		&nbsp&nbsp <input type="radio" name="experience" value="Average">Average
+		&nbsp&nbsp <input type="radio" name="experience" value="Good">Good
+			<br> Comment:<br>
+			<textarea rows="7" cols="40" name="comment" th:field="*{comment}"></textarea>
+			<br>
+			<br>
+			<div class="submit">
+				<button type="submit">Submit</button>
+			</div>
+	</div>
+	</form>
+</body>
+</html>
+

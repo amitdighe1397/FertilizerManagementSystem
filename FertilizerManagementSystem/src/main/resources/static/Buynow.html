@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Radio buttons</title>
+<link rel="stylesheet" href="Buynow.css">
+</head>
+
+<body align="center" bgcolor="white" text="blue">
+</html>
+<html>
+<body background="NN.jpg" text="#008B8B">
+	<form action="/saveorder" method="post" th:action="@{/saveorder}"
+			th:object="${Order}">
+	<div class="feed">
+		<h1
+			style="font-size: 30pt; font-family: Georgia; color: black; font-weight: bold">
+			<U>Buy now</U>
+		</h1>
+		<br>
+		<h3>Fill up the following information:</h3>
+		<br> Name: <input type="text" name="name" size="30" th:field="*{name}"> </br>
+		<br> Address:<br>
+		<textarea rows="7" cols="40" name="address"  th:field="*{address}"></textarea>
+		<br>
+		<br> Mob No.: <input type="text" name="mobno" size="30" th:field="*{mobno}"><br>
+		<br> E-mail: <input type="text" name="email" size="30" th:field="*{email}"><br>
+		<br> Pin no.: <input type="text" name="pinno" size="30" th:field="*{pinno}"><br>
+		<br> Quantity: <input type="text" name="quantity" size="20" th:field="*{quantity}><br>
+		<br> Payment:<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input
+			type="radio" name="paymentmethod" value="Bad"  th:field="*{paymentmethod}">Cash on Delivery<br>
+		&nbsp&nbsp <input type="radio" name="paymentmethod" value="Average"  th:field="*{paymentmethod}">Phone
+		pay<br> &nbsp&nbsp <input type="radio" name="paymentmethod"
+			value="Good"  th:field="*{paymentmethod}">Google pay<br>
+		<form name="form" align="center">
+			<br>
+			<div class="submit">
+				<button type="submit">Submit</button>
+			</div>
+	</div>
+	</div
+	</form>
+</body>
+</html>
+

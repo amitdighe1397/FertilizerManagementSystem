@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Sign in</title>
+<link rel="stylesheet" type="text/css" href="sign in.css">
+<body bgcolor="white" text="white" align="center">
+	<P align="left">
+		<a href="Index.html"><img src=" back button.jpg" height="30"
+			width="80"></a>
+	</P>
+
+	<link rel="stylesheet" type="text/css" href="sign in.css">
+	<div class="bgimage">
+		<div class="menu">
+			<div class="leftmenu">
+				<img src="logo.jpg" width="100" height="80" align="left">
+			</div>
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+</body>
+</html>
+
+<html>
+<head>
+<link rel="stylesheet" href="sign in.css">
+</head>
+<body background="NN.jpg" text="white">
+	<div class="head">
+		<h6 style="background: white">
+			<marquee>
+				Shree Datta Fertilizers & Chemicals
+				</h4>
+			</marquee>
+	</div>
+	<img src="sign.png" width="20%height="50">
+	<br>
+	<br>
+	<h1
+		style="font-size: 30pt; font-family: Georgia; color: black; font-weight: bold">
+		<U>Sign in</U>
+		</h6>
+		<br>
+		<br>
+	</h1>
+	<br>
+	<br>
+
+	<div class="form">
+		<form action="/saveAdmin" method="post" th:action="@{/saveAdmin}"
+			th:object="${Admin}">
+			User Name: <input type="text" name="userName" size="20"
+				th:field="*{userName}"><br> <br> Phone No: <input
+				type="text" name="phoneNo" size="20" th:field="*{phoneNo}"><br>
+			<br> Address:<br>
+			<textarea rows="7" cols="50" name="address" th:field="*{address}"></textarea>
+			<br> <br> State: <select name="state" th:field="*{state}">
+				<option value="A-01">Andaman and Nicobar</option>
+				<option value="B-01">Andhra Pradesh</option>
+				<option value="C-01">Arunachal Pradesh</option>
+				<option value="E-01">Assam</option>
+				<option value="F-01">Bihar</option>
+				<option value="G-01">Chandigarh</option>
+				<option value="H-01">Chattisgarh</option>
+				<option value="I-01">Gujarat</option>
+				<option value="J-01">Haryana</option>
+				<option value="K-01">Himachal Pradesh</option>
+				<option value="L-01">Jammu Kashmir</option>
+				<option value="M-01">Jharkhand</option>
+				<option value="N-01">Karnataka</option>
+				<option value="O-01">Kerala</option>
+				<option value="P-01">Madhya Pradesh</option>
+				<option value="Q-01">Maharashtra</option>
+				<option value="R-01">Manipur</option>
+				<option value="S-01">Meghalaya</option>
+				<option value="T-01">Mizoram</option>
+				<option value="U-01">Nagaland</option>
+				<option value="V-01">Odisha</option>
+				<option value="W-01">Punjab</option>
+				<option value="X-01">Rajasthan</option>
+				<option value="Y-01">Sikkim</option>
+				<option value="Z-01">Tamil Nadu</option>
+				<option value="A-02">Tripura</option>
+				<option value="B-03">Uttar Pradesh</option>
+				<option value="C-04">Uttarakhand</option>
+				<option value="D-05">West Bengal</option>
+			</select><br> <br> E-mail Id: <input type="text" name="email"
+				size="50" th:field="*{email}"><br> <br> Password:
+			<input type="password" name="password" size="20"
+				th:field="*{password}"><br> <br>
+			<div class="Login">
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

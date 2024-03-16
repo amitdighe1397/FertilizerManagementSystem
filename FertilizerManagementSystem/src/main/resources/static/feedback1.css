@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bgimage {
+	background-image: url('.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+}
+
+.leftmenu {
+	width: 25%;
+	line-height: 80px;
+	float: left;
+}
+
+.img {
+	padding-left: 70px;
+	font-size: 22px;
+}
+
+.rightmenu ul li {
+	display: inline-block;
+	List-style: none;
+	font size: 20px;
+	color: white;
+	font-weight: bold;
+	line-height: 50px;
+	line-width: 100%;
+	margin-right: 50px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	position: relative;
+}
+
+nav ul li:hover {
+	background-color: #f39d1a;
+}
+
+nav ul li ul li a:hover {
+	background-color: #f39d1a;
+}
+
+.rightmenu ul li {
+	font size: 15px;
+	color: white;
+	font-weight: bold;
+	line-height: 50px;
+	margin-right: 50px;
+}
+
+.text {
+	width: 100%;
+	margin-top: 300px;
+	text-align: center;
+	color:;
+}
+
+.text h2 {
+	font-size: 70;
+	font-weight: bold;
+}
+
+text h3 {
+	font-size: 30;
+	font-weight: bold;
+}
+
+.rightmenu a {
+	text-decoration: none;
+	color: white;
+}
+
+.foot {
+	margin-top: 50%;
+	font-weight: bold;
+	font-size: 30;
+}
+
+h1 {
+	font-family: serif;
+	font-size: 30pt;
+	color: black;
+}
+
+.feed {
+	color: white;
+	font-weight: bold;
+	font-size: 15pt;
+	text-align: center;
+	border-style: soli;
+}
+
+.submit {
+	background-color: red;
+}
+
+.submit {
+	color: white;
+	text-decoration: none;
+	background: black;
+	height: 5%;
+	width: 10%;
+	margin-left: 45%;
+	padding: 7px;
+}
+
+.submit a {
+	text-decoration: none;
+	color: white;
+}
+
+.mark {
+	font-size: 30px;
+	width: 100%;
+	font-style: Dutch801 XBd BT;
+	weight: 40%;
+	color: red;
+	font-weight: bold;
+}

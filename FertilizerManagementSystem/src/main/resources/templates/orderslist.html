@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<title></title>
+	<style>
+		table,
+		th,
+		td {
+			border: 3px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+	<link rel="stylesheet" href="feedback1.css">
+</head>
+<P align="left"><a href="Index.html"><img src=" back button.jpg" height="30" width="80"></a></P>
+
+<body align="center" bgcolor="white" text="white">
+	<div class="bgimage">
+		<div class="menu">
+			<div class="leftmenu">
+				<img src="logo.jpg" width="100" height="80" align="left">
+			</div>
+			<div class="rightmenu">
+				<nav>
+					<ul>
+						<li id=firstlist><a href="home.html">Home</a></li>
+						<li><a href="product.html">products</a></li>
+						<li><a href="aboutus.html">aboutus</a></li>
+						<li><a href="contactus.html">contactus</a></li>
+						<li><a href="sign in.html">signin</a></li>
+						<li><a href="feedback1.html">Feedback</a></li>
+						<li><a href="findus.html">Findus</a></li>
+				</nav>
+			</div>
+		</div><br><br><br>
+</body>
+<div class="mark">
+	<h4 style="background:white;color=red">
+		<marquee>Shree Datta Fertilisers & Chemicals
+	</h4>
+	</marquee>
+</div>
+
+</html>
+<html>
+
+<body background="NN.jpg" text="#008B8B">
+	<div class="feed">
+		<h1 style="font-size:30pt; font-family:Georgia;color:black;font-weight:bold"><U>Orders  Review</U></h1><br><br>
+	</div>
+	
+	<table style="width:100%">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Phone No</th>
+			<th>Email</th>
+			<th>Pinno</th>
+			<th>Quantity</th>
+			<th>Paymentmethod</th>
+			
+		</tr>
+	
+		<tr th:each="order : ${orderslist}">
+			<td th:text="${order.id}"></td>
+			<td th:text="${order.name}"></td>
+			<td th:text="${order.address}"></td>
+			<td th:text="${order.mobno}"></td>
+			<td th:text="${order.email}"></td>
+			<td th:text="${order.pinno}"></td>
+			<td th:text="${order.quantity}"></td>
+			<td th:text="${order.paymentmethod}"></td>
+		</tr>
+
+
+	</table>
+	</div>
+	</form>
+</body>
+
+</html>

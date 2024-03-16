@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="sign in.css">
+<body bgcolor="white" text="white" align="center">
+	<P align="left">
+		<a href="Index.html"><img src=" back button.jpg" height="30"
+			width="80"></a>
+	</P>
+
+	<link rel="stylesheet" type="text/css" href="sign in.css">
+	<div class="bgimage">
+		<div class="menu">
+			<div class="leftmenu">
+				<img src="logo.jpg" width="100" height="80" align="left">
+			</div>
+
+		</div>
+		<br> <br> <br> <br>
+</body>
+</head>
+<body background="NN.jpg" text="white">
+	<div class="head">
+		<h6 style="background: white">
+			<marquee>
+				Shree Datta Fertilizers & Chemicals
+				</h4>
+			</marquee>
+	</div>
+	<img src="sign.png" width="20% " height="50">
+	<br>
+	<br>
+	<h1
+		style="font-size: 30pt; font-family: Georgia; color: black; font-weight: bold">
+		<U>Login</U>
+		</h6>
+		<br> <br>
+		<form action="/adminlogin" th:object="${Admin}" method="post">
+			<div class="input-group">
+				<label for="username">User Name</label> <input type="text"
+					id="username" name="username">
+			</div> <br> <br>
+			<div class="input-group">
+				<label for="password">Password</label> <input type="password"
+					id="password" name="password">
+			</div> <br> <br>
+			<div class="Login">
+				<button type="submit">Login</button>
+			</div>
+			<br> <br>
+			<div class="signin">
+				<a href="sign in.html">Signup now</a>
+			</div>
+
+		</form>
+</body>
+</html>

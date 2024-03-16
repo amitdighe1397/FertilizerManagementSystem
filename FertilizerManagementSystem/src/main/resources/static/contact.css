@@ -1,0 +1,26 @@
+{padding:0;
+        margin:0;
+     }
+.html ul li{
+display:inline-block;
+List-style:none;
+font size:15px;
+color:white;
+font-weight:bold;
+line-height:100px;
+margin-right:50px;
+text-transform:uppercase;
+}
+
+div.con li{
+list-style: none;
+float: left;
+padding: 5px;
+margin-left:15%;
+}
+       
+      
+div.foot h5{
+display:block;
+margin-top: 30px;
+}     
